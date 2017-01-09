@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var favClassLabel: UILabel!
+    @IBOutlet weak var yellowButton: UIButton!
+    @IBOutlet weak var changeImage: UIImageView!
+    @IBOutlet weak var funTextField: UITextField!
+    @IBOutlet weak var favoriteBand: UILabel!
+    @IBOutlet weak var numberOfPeople: UILabel!
+    var faveBand = "OneRepublic"
+    let numberOfMembers = "5"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        favClassLabel.text = "History"
+        yellowButton.backgroundColor = UIColor.yellow
+        changeImage.image = UIImage(named: "map")
+        funTextField.text = "What Fun!"
+        favoriteBand.text = faveBand
+        numberOfPeople.text = "\(faveBand) has \(numberOfMembers) members"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
+
+
+
+
+
+
 
